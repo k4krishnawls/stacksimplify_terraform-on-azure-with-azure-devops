@@ -35,7 +35,6 @@ steps:
 ####CD starts
 variables:
   appservicename: 'pulterraformwebb321690f'
-
 - task: AzureRmWebAppDeployment@3
   displayName: 'Azure App Service Deploy: $(appservicename)'
   inputs:
