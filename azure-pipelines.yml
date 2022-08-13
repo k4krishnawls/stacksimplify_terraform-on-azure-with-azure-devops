@@ -32,16 +32,6 @@ steps:
     arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
     zipAfterPublish: True
 
-- task: CopyFiles@2
-  displayName: 'Copy Terraform files to artifacts'
-  inputs:
-    SourceFolder: Terraform
-    TargetFolder: '$(build.artifactstagingdirectory)/Terraform'
-
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact'
-  inputs:
-    PathtoPublish: '$(build.artifactstagingdirectory)'
 ####CD starts
 variables:
   appservicename: 'pulterraformwebb321690f'
