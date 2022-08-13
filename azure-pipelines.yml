@@ -43,7 +43,6 @@ steps:
   inputs:
     PathtoPublish: '$(build.artifactstagingdirectory)'
 ####CD starts
-	
 variables:
   appservicename: 'pulterraformwebb321690f'
 
